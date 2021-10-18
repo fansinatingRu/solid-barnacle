@@ -46,7 +46,9 @@ def fun1(username_text, password_text):
         driver.find_element_by_xpath('//*[@id="mobilePassword"]').send_keys(password_text)
         # 获取登录按键并点击登录
         driver.find_element_by_xpath('// *[ @ id = "load"]').click()
-        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "\t" + str(username_text) + "\n成功登陆")
+#         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "\t" + str(username_text) + "\n成功登陆")
+        print(username_text)
+        print(password_text)
         time.sleep(3)
         try:
             driver.find_element_by_xpath(
